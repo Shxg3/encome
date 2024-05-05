@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>موقع تخصص الاقتصاد</title>
+    <title>موقع احترافي</title>
     <style>
         * {
             box-sizing: border-box;
@@ -22,28 +22,36 @@
         }
 
         nav {
-            background-color: #FCE4EC;
-            padding: 10px;
-            text-align: center;
-        }
+    background-color: #FCE4EC;
+    padding: 10px;
+    text-align: left;
+    display: none;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
+nav ul {
+    display: block;
+    padding: 70px 0 0 0;
+    margin: 0;
+}
 
-        nav ul li {
-            display: inline-block;
-            margin-right: 10px;
-        }
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+    list-style: none;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px;
-            border-bottom: 2px solid transparent;
-        }
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+}
 
         nav ul li a:hover {
             border-bottom-color: #333;
@@ -60,6 +68,34 @@
             text-align: center;
             color: #fff;
         }
+
+        /* تصميم الزر */
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #fdaaaa;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            z-index: 9999;
+            font-size: 30px;
+        }
+
+        /* إضافة استجابة للأجهزة الصغيرة */
+        @media (max-width: 768px) {
+            nav {
+                padding: 10px;
+            }
+
+            .menu-button {
+                top: 10px;
+                left: 10px;
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -67,7 +103,7 @@
         <h1>مرحبًا بكم في موقعنا لتخصص الاقتصاد</h1>
     </header>
 
-    <nav>
+    <nav id="main-menu">
         <ul>
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="about.html">المقدمة</a></li>
@@ -76,16 +112,36 @@
         </ul>
     </nav>
 
+    <button class="menu-button" onclick="toggleMenu()">|||</button>
+
     <section>
+        <h2>بسم الله الرحمن الرحيم</h2>
         <img src="logo.jpg" alt="صورة ترحيبية">
         <p>موقعنا شامل لتقرير تخصص الاقتصاد</p>
     </section>
 
     <footer>
         <h3>تواصل معنا</h3>
-        <p>العنوان:المدرسه الثانويه الثانيه ينبع البحر</p>
+        <p>العنوان: المدرسة الثانوية الثانية ينبع البحر</p>
         <p>الهاتف: 123456789</p>
         <p>البريد الإلكتروني: info@example.com</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+    var menu = document.getElementById("main-menu");
+    var menuButton = document.getElementsByClassName("menu-button")[0];
+    
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+        menuButton.style.backgroundColor = "#fff";
+        menuButton.style.color = "#fdaaaa";
+    } else {
+        menu.style.display = "none";
+        menuButton.style.backgroundColor = "#fdaaaa";
+        menuButton.style.color = "#fff";
+    }
+}
+</script>
 </body>
 </html>

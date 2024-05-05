@@ -18,27 +18,74 @@
         }
 
         nav {
-            background-color: #0a27e4;
-            color: #fff;
-            padding: 10px;
+    background-color: #c9defd;
+    padding: 10px;
+    text-align: left;
+    display: none;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+nav ul {
+    display: block;
+    padding: 70px 0 0 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+        nav ul li a:hover {
+            border-bottom-color: #333;
         }
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        footer {
+            background-color: #8cb6f4;
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
 
-        nav li {
-            display: inline-block;
-            margin: 0 10px;
+        /* تصميم الزر */
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #aac0fd;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            z-index: 9999;
+            font-size: 30px;
         }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
+        /* إضافة استجابة للأجهزة الصغيرة */
+        @media (max-width: 768px) {
+            nav {
+                padding: 10px;
+            }
+
+            .menu-button {
+                top: 10px;
+                left: 10px;
+                padding: 5px 10px;
+                font-size: 14px;
+            }
         }
 
         main {
@@ -51,13 +98,6 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
-        footer {
-            background-color: #8cb6f4;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -65,15 +105,15 @@
         <h1 style="color: #fff;">الاحصائيات والخاتمه</h1>
     </header>
 
-    <nav>
+    <nav id="main-menu">
         <ul>
-            <li><a href="index.html" style="color: #fff;">الرئيسية</a></li>
-            <li><a href="about.html" style="color: #fff;">المقدمة</a></li>
-            <li><a href="services.html" style="color: #fff;">محتوى التقرير</a></li>
-            <li><a href="contact.html" style="color: #fff;">الاحصائيات والخاتمه</a></li>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">المقدمة</a></li>
+            <li><a href="services.html">محتوى التقرير</a></li>
+            <li><a href="contact.html">الاحصائيات والخاتمة</a></li>
         </ul>
     </nav>
-
+    <button class="menu-button" onclick="toggleMenu()">|||</button>
     <main>
         <h2 style="color: #0d0396;">الاحصائية</h2>
         <p>احصائية عدد الجامعات في المملكة العربية السعودية التي تقدم 
@@ -119,5 +159,21 @@
     <footer>
         <p>جميع الحقوق محفوظة &copy; 2024</p>
     </footer>
+    <script>
+        function toggleMenu() {
+    var menu = document.getElementById("main-menu");
+    var menuButton = document.getElementsByClassName("menu-button")[0];
+    
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+        menuButton.style.backgroundColor = "#fff";
+        menuButton.style.color = "#aac0fd";
+    } else {
+        menu.style.display = "none";
+        menuButton.style.backgroundColor = "#aac0fd";
+        menuButton.style.color = "#fff";
+    }
+}
+</script>
 </body>
 </html>
