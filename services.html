@@ -11,14 +11,14 @@
         }
 
         header {
-            background-color: #8cb6f4;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         nav {
-    background-color: #c9defd;
+    background-color: #FCE4EC;
     padding: 10px;
     text-align: left;
     display: none;
@@ -55,7 +55,7 @@ nav ul li a {
         }
 
         footer {
-            background-color: #8cb6f4;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -66,7 +66,7 @@ nav ul li a {
             position: fixed;
             top: 20px;
             left: 20px;
-            background-color: #aac0fd;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 10px 15px;
             border: none;
@@ -99,12 +99,39 @@ nav ul li a {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+        blockquote {
+      font-style: italic;
+      color: #191818;
+    }
+    .examples-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .example {
+      display: flex;
+      align-items: center;
+    }
+
+    .example img {
+      margin-right: 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
 
     </style>
 </head>
 <body>
-    <header>
-        <h1 style="color: #fff;">المحتوى</h1>
+    <header style="background-color: #fdaaaa; padding: 20px;">
+        <div style="display: flex; justify-content: flex-end;">
+            <img src="logo.jpg" alt="شعار" style="width: 150px; height: auto;">
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h1 style="color: #fff; text-align: center;">المحتوى</h1>
+        </div>
+        
     </header>
 
     <nav id="main-menu">
@@ -117,7 +144,7 @@ nav ul li a {
     </nav>
     <button class="menu-button" onclick="toggleMenu()">|||</button>
     <main>
-        <h2 style="color: #0d0396;">فرص العمل</h2>
+        <h2 style="color: #ed087a;">فرص العمل</h2>
         <p>
             تخصص االقتصاد هو واحد من أهم التخصصات االجتماعية التي تهدف 
 إلى فهم وتحليل كيفية توزيع الموارد والثروة في المجتمع، وكذلك دراسة 
@@ -131,7 +158,46 @@ nav ul li a {
 في الاقتصاد أن يعملوا كأساتذة جامعيين وباحثين في المجال 
 االقتصادي</p>
 
-<h2 style="color: #0d0396;">أهمية تخصص الاقتصاد</h2>
+<h2 style="color: #ed087a;">مسميات الوظائف لتخصص الاقتصاد وامثله</h2>
+<div class="examples-grid">
+    <div class="example">
+      <img src="image1.png" alt="صورة 1">
+      <div>
+        <p><b>اقتصادي 1(Economist)</b></p>
+        <p>مثال: جون ماينارد كينز، ميلتون فريدمان</p>
+        <blockquote>مقولة ملهمة: "الاقتصاد ليس سوى وسيلة لتحقيق الغايات الإنسانية" - جون ماينارد كينز</blockquote>
+      </div>
+    </div>
+
+    <div class="example">
+      <img src="image2.png" alt="صورة 2">
+      <div>
+        <p><b>محلل اقتصادي 2(Economic Analyst)</b></p>
+        <p>مثال: نوريل روبينز، بول كروجمان</p>
+        <blockquote>مقولة ملهمة: "الاقتصاد هو علم الاختيار، وكل شيء له تكلفة بديلة" - نوريل روبينز</blockquote>
+      </div>
+    </div>
+
+    <div class="example">
+      <img src="image3.png" alt="صورة 3">
+      <div>
+        <p><b>استراتيجي اقتصادي 3(Economic Strategist)</b></p>
+        <p>مثال: تشارلز شلاب، مارتن فلدستاين</p>
+        <blockquote>مقولة ملهمة:"الاقتصاد ليس فقط عن الأرقام والإحصاءات، بل عن فهم القوى الدافعة والتأثيرات الاجتماعية والسياسية" - تشارلز شلاب</blockquote>
+      </div>
+    </div>
+
+    <div class="example">
+      <img src="image4.png" alt="صورة 4">
+      <div>
+        <p><b>مستشار اقتصادي 4(Economic Advisor)</b></p>
+        <p>مثال: جوزيف ستيغليتز، نورييل روبينز</p>
+        <blockquote>مقولة ملهمة: "الاقتصاد يجب أن يكون وسيلة لتحقيق العدالة الاجتماعية وتحسين حياة الناس" - جوزيف ستيغليتز</blockquote>
+      </div>
+    </div>
+  </div>
+
+<h2 style="color: #ed087a;">أهمية تخصص الاقتصاد</h2>
 <p>تعتبر دراسة الاقتصاد أمًرا ضروريًا لفهم التفاعالت المعقدة
     التي تحدث في النظام الاقتصادي وتأثيرها على الافراد 
     والمجتمعات. تساعد دراسة الاقتصاد على اتخاذ قرارات فعالة 
@@ -139,7 +205,7 @@ nav ul li a {
     فهم الاقتصاد، يمكن تحليل وتوقع التغيرات الاقتصادية واتخاذ 
     إجراءات للتكيف معها. </p>
 
-    <h2 style="color: #0d0396;">التحديات المستقبلية لتخصص الاقتصاد</h2>
+    <h2 style="color: #ed087a;">التحديات المستقبلية لتخصص الاقتصاد</h2>
     <p>تواجه مجالات الاقتصاد تحديات مستقبلية مهمة. من بين هذه 
         التحديات:</p>
        <p>1 التحول الرقمي والتكنولوجي: يتطلب تطور التكنولوجيا والتحول 
@@ -166,10 +232,10 @@ nav ul li a {
     if (menu.style.display === "none") {
         menu.style.display = "block";
         menuButton.style.backgroundColor = "#fff";
-        menuButton.style.color = "#aac0fd";
+        menuButton.style.color = "#fdaaaa";
     } else {
         menu.style.display = "none";
-        menuButton.style.backgroundColor = "#aac0fd";
+        menuButton.style.backgroundColor = "#fdaaaa";
         menuButton.style.color = "#fff";
     }
 }

@@ -11,13 +11,13 @@
         }
 
         header {
-            background-color: #8cb6f4;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
         nav {
-    background-color: #c9defd;
+    background-color: #FCE4EC;
     padding: 10px;
     text-align: left;
     display: none;
@@ -54,7 +54,7 @@ nav ul li a {
         }
 
         footer {
-            background-color: #8cb6f4;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -65,7 +65,7 @@ nav ul li a {
             position: fixed;
             top: 20px;
             left: 20px;
-            background-color: #aac0fd;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 10px 15px;
             border: none;
@@ -100,8 +100,14 @@ nav ul li a {
     </style>
 </head>
 <body>
-    <header>
-        <h1 style="color: #fff;">المقدمة</h1>
+    <header style="background-color: #fdaaaa; padding: 20px;">
+        <div style="display: flex; justify-content: flex-end;">
+            <img src="logo.jpg" alt="شعار" style="width: 150px; height: auto;">
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h1 style="color: #fff; text-align: center;">المقدمة</h1>
+        </div>
+        
     </header>
 
     <nav id="main-menu">
@@ -139,7 +145,7 @@ nav ul li a {
 الزيارات الميدانية والمحاضرات الضيفة وورش العمل والفعاليات األخرى 
 لتعزيز تطبيق المفاهيم الاقتصادية في الواقع.</p>
 
-<h2 style="color: #0d0396;">أهداف الاقتصاد </h2>
+<h2 style="color: #ed087a;">أهداف الاقتصاد </h2>
 <p>تهدف دراسة الاقتصاد إلى تحقيق عدة أهداف، من بينها: </p>
    <p> .1 فهم طبيعة الاقتصاد وكيفية عمله، بما في ذلك العوامل التي تؤثر 
     في اإلنتاج والتوزيع والاستهالك.
@@ -153,7 +159,7 @@ nav ul li a {
     <p>.4 تحليل العوامل الاقتصادية التي تؤثر في التضخم والبطالة 
     والتجارة الدولية وسياسات الضرائب والنظام المالي.</p>
 
-    <h2 style="color: #0d0396;">فروع الاقتصاد</h2>
+    <h2 style="color: #ed087a;">فروع الاقتصاد</h2>
     <p>ينقسم الاقتصاد إلى عدة فروع رئيسية تشمل</p>
        <p>.1 الاقتصاد الكلي: يدرس األسس والعوامل التي تؤثر في النمو الاقتصادي 
         للبلد بشكل عام، مثل الناتج المحلي الاجمالي والتضخم والبطالة والسياسات 
@@ -178,10 +184,10 @@ nav ul li a {
     if (menu.style.display === "none") {
         menu.style.display = "block";
         menuButton.style.backgroundColor = "#fff";
-        menuButton.style.color = "#aac0fd";
+        menuButton.style.color = "#fdaaaa";
     } else {
         menu.style.display = "none";
-        menuButton.style.backgroundColor = "#aac0fd";
+        menuButton.style.backgroundColor = "#fdaaaa";
         menuButton.style.color = "#fff";
     }
 }

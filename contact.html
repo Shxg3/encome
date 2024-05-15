@@ -11,14 +11,14 @@
         }
 
         header {
-            background-color: #8cb6f4;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         nav {
-    background-color: #c9defd;
+    background-color: #FCE4EC;
     padding: 10px;
     text-align: left;
     display: none;
@@ -55,7 +55,7 @@ nav ul li a {
         }
 
         footer {
-            background-color: #8cb6f4;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -66,7 +66,7 @@ nav ul li a {
             position: fixed;
             top: 20px;
             left: 20px;
-            background-color: #aac0fd;
+            background-color: #fdaaaa;
             color: #fff;
             padding: 10px 15px;
             border: none;
@@ -99,11 +99,34 @@ nav ul li a {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+        ol {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        
+        li {
+            line-height: 1.5;
+        }
+        
+        a {
+            color: #0000ee;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1 style="color: #fff;">الاحصائيات والخاتمه</h1>
+    <header style="background-color: #fdaaaa; padding: 20px;">
+        <div style="display: flex; justify-content: flex-end;">
+            <img src="logo.jpg" alt="شعار" style="width: 150px; height: auto;">
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h1 style="color: #fff; text-align: center;">الاحصائيات والخاتمة</h1>
+        </div>
+        
     </header>
 
     <nav id="main-menu">
@@ -116,22 +139,22 @@ nav ul li a {
     </nav>
     <button class="menu-button" onclick="toggleMenu()">|||</button>
     <main>
-        <h2 style="color: #0d0396;">الاحصائية</h2>
-        <p>احصائية عدد الجامعات في المملكة العربية السعودية التي تقدم 
-            تخصص االقتصاد. يمكن ذكر بعض الجامعات التي تقدم هذا 
-            التخصص</p>
-<p>1 جامعة الملك سعود </p>
-   <p>2 جامعة القصيم </p>
-   <p> 3 جامعة الملك عبدالعزيز</p>
-    <p>4 جامعة الملك فهد للبترول والمعادن</p>
-    <p>5 جامعة اإلمام محمد بن سعود اإلسالمية</p>
-    <p>6 جامعة الملك خالد</p>
-    <p>7 جامعة الدمام</p>
-    <p>8 جامعة األميرة نورة بنت عبدالرحمن</p>
-    <p>9 جامعة الملك عبدهللا للعلوم والتقنية</p>
-    <p>10 جامعة الجوف</p>
+        <h2 style="color: #ed087a;">الاحصائية</h2>
+        <p>احصائية عدد الجامعات في المملكة العربية السعودية التي تقدم تخصص الاقتصاد. يمكن ذكر بعض الجامعات التي تقدم هذا التخصص</p>
+        <ol>
+            <li><a href="https://www.ksu.edu.sa/">جامعة الملك سعود</a></li>
+            <li><a href="https://www.unizwa.edu.om/">جامعة القصيم</a></li>
+            <li><a href="https://www.kau.edu.sa/">جامعة الملك عبدالعزيز</a></li>
+            <li><a href="https://www.kfupm.edu.sa/">جامعة الملك فهد للبترول والمعادن</a></li>
+            <li><a href="https://www.imamu.edu.sa/">جامعة الإمام محمد بن سعود الإسلامية</a></li>
+            <li><a href="https://www.kku.edu.sa/">جامعة الملك خالد</a></li>
+            <li><a href="https://www.uod.edu.sa/">جامعة الدمام</a></li>
+            <li><a href="https://www.pnu.edu.sa/">جامعة الأميرة نورة بنت عبدالرحمن</a></li>
+            <li><a href="https://www.kaust.edu.sa/">جامعة الملك عبدالله للعلوم والتقنية</a></li>
+            <li><a href="https://www.ju.edu.sa/">جامعة الجوف</a></li>
+         </ol>
 
-    <h2 style="color: #0d0396;">الخاتمه</h2>
+    <h2 style="color: #ed087a;">الخاتمه</h2>
     <p>تخصص الاقتصاد يقدم فرصا مهنية متنوعة وواسعة النطاق. يمكن لحملة 
         شهادة في الاقتصاد العمل في القطاع المصرفي والتأمين والاستثمار، وفي 
         المؤسسات الحكومية والمنظمات الدولية، وفي قطاع الاعمال الخاص 
@@ -168,10 +191,10 @@ nav ul li a {
     if (menu.style.display === "none") {
         menu.style.display = "block";
         menuButton.style.backgroundColor = "#fff";
-        menuButton.style.color = "#aac0fd";
+        menuButton.style.color = "#fdaaaa";
     } else {
         menu.style.display = "none";
-        menuButton.style.backgroundColor = "#aac0fd";
+        menuButton.style.backgroundColor = "#fdaaaa";
         menuButton.style.color = "#fff";
     }
 }
